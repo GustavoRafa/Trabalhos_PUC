@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1617104701 source:c:\users\pichau\desktop\puc\java\provacteste\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+
