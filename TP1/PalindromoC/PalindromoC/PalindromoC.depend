@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1598370625 source:c:\users\pichau\desktop\puc\java\palindromoc\palindromoc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
