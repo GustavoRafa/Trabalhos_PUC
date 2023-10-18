@@ -1,7 +1,3 @@
-/**
- * 
- */
-import java.util.Random;
 import java.io.*;
 import java.nio.charset.*;
 
@@ -239,47 +235,5 @@ class MyIO {
       }catch(UnsupportedEncodingException e){ System.out.println("Erro: charset invalido"); }
       pause();
    }
-}
-
-public class AlteracaoAleatoria {
-
-	/**
-	 * @param args
-	 */
-    public static String sorteio(String f, Random gerador)
-    {
-        
-        char s1 = (char)('a' + Math.abs(gerador.nextInt())% 26);
-        char s2 = (char)('a' + Math.abs(gerador.nextInt())% 26);
-             
-        
-        String frase = new String("");
-
-           for(int i=0;i < f.length() ;i++){
-               if(s1 == f.charAt(i)) {
-                    frase += s2;
-               }
-               else {
-                   frase += f.charAt(i);
-               }
-           }
-
-           return frase;
-    }
-
-    public static void main(String[] args) throws IOException {
-        String f;
-        
-        Random gerador =  new Random();
-        gerador.setSeed(4);
-        
-        do {
-        	f = MyIO.readLine();
-        	if (! f.equals("FIM")) 
-        		MyIO.println (sorteio(f, gerador));
-        } while(! f.equals("FIM"));
-
-    }
-
 }
 
